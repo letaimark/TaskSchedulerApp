@@ -27,11 +27,9 @@
                             </Grid>
                         </Border>
                         <ControlTemplate.Triggers>
-                            <!-- Show watermark when Text is empty -->
                             <Trigger Property="Text" Value="">
                                 <Setter TargetName="WatermarkText" Property="Visibility" Value="Visible"/>
                             </Trigger>
-                            <!-- Optionally hide watermark when the TextBox has focus -->
                             <Trigger Property="IsKeyboardFocused" Value="True">
                                 <Setter TargetName="WatermarkText" Property="Visibility" Value="Hidden"/>
                             </Trigger>
